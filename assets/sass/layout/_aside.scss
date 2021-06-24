@@ -1,0 +1,16 @@
+.aside {
+  @include respond-to('large') {
+    padding-right: 0.75vw;
+    & .left-list {
+      & .list-header {
+        &__title {
+
+        }
+        &__paragraph {
+
+        }
+      }
+
+    }
+  }
+}

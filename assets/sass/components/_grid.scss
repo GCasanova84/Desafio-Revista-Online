@@ -1,0 +1,34 @@
+.container {
+  display: grid;
+  @include respond-to('large') {
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 0.75vw;
+    & .header {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    & .main {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      & .main-content {
+        & .news-list {
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-column-gap: 1.2vw;
+        }
+      }
+    }
+    & .aside {
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+    & .newsletter {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    footer {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 992px) {
+  .aside {
+    padding-right: 0.75vw;
+  }
+}
+
+.footer {
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .header .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+  }
+  .header .navigation__logo {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  .header .navigation .nav__list {
+    display: flex;
+    list-style: none;
+  }
+  .header .navigation .nav__list .nav__item {
+    margin-left: 2vw;
+    border: 1px solid pink;
+  }
+  .header .navigation .nav__list .nav__item a {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    padding-left: 0.75vw;
+  }
+  .main .main-content .news-list__container {
+    padding: 2vw 0;
+  }
+  .main .main-content .news-list__container .news-list__header {
+    margin-bottom: 1.4vw;
+    font-size: 1.4vw;
+  }
+  .main .main-content .news-list__container .news-list__body {
+    font-size: 1.4vw;
+  }
+  .main .main-content .news-list__container .news-list__body img {
+    height: 32.4vw;
+  }
+  .main .main-content .news-list__container .news-list__body p {
+    margin: 1.4vw 0;
+  }
+}
+
+.newsletter {
+  border: 1px solid yellow;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+}
+
+.container {
+  display: grid;
+}
+@media (min-width: 992px) {
+  .container {
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 0.75vw;
+  }
+  .container .header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .container .main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .container .main .main-content .news-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 1.2vw;
+  }
+  .container .aside {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .container .newsletter {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .container footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

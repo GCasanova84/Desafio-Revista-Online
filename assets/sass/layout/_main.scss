@@ -1,0 +1,25 @@
+.main {
+  @include respond-to('large') {
+    padding-left: 0.75vw;
+    & .main-content {
+      & .news-list {
+        &__container {
+          padding: 2vw 0;
+          & .news-list__header {
+            margin-bottom: 1.4vw;
+            font-size: 1.4vw;
+          }
+          & .news-list__body {
+            font-size: 1.4vw;
+            img {
+              height: 32.4vw;
+            }
+            p {
+              margin: 1.4vw 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

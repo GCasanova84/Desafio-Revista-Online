@@ -6,8 +6,13 @@
 @import 'base/reset';
 @import 'base/typography';
 //layout
+@import 'layout/aside';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/newsletter';
 //components
-//@import 'components/component';
+@import 'components/grid';
 //pages
 @import 'pages/index';
 //themes
