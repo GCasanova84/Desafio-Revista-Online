@@ -1,5 +1,6 @@
 .footer {
-  border: 1px solid black;
-    margin: 0 auto;
+  @include respond-to('large') {
     text-align: center;
+    padding: 1vw 0;
+  }
 }

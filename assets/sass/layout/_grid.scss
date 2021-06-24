@@ -1,8 +1,9 @@
 .container {
   display: grid;
   @include respond-to('large') {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 30.75vw 30.75vw 34.95vw;
     grid-column-gap: 0.75vw;
+    padding-right: 2.8vw;
     & .header {
       grid-column-start: 1;
       grid-column-end: 4;

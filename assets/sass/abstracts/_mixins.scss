@@ -16,3 +16,11 @@
          + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
+@mixin font($f-fam, $f-color) {
+  font-family: $f-fam;
+  color: $f-color;
+}
+@mixin relative-converter($property, $unit, $target, $context) {
+  $result: 100*($target/$context);
+  #{$property}: #{$result + $unit};
+}

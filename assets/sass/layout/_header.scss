@@ -1,27 +1,19 @@
 .header {
   @include respond-to('large') {
+    border-bottom: 2px solid gray;
     & .navigation {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1vw 2vw;
-      &__logo {
-        font-size: 3vw;
-        font-weight: bold;
-      }
+      padding: 1.5vw;
       & .nav {
         &__list {
           display: flex;
+          align-items: center;
+          justify-content: center;
           list-style: none;
           & .nav__item {
             margin-left: 2vw;
-            a {
-              text-decoration: none;
-            }
-            border: 1px solid pink;
-            & .input-menu {
-
-            }
           }
         }
       }

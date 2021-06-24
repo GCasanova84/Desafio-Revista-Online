@@ -1,0 +1,20 @@
+.input-menu {
+  @include respond-to('large') {
+    border-radius: 2.5rem;
+    padding: 0.35vw;
+    max-width: 13vw;
+    @include font($verdana, $gray);
+    @include relative-converter(font-size, vw, $f-small, $min-large);
+  }
+}
+.newsletter__group {
+  @include respond-to('large') {
+    input {
+      border-radius: 0;
+      border: none;
+      padding: 0.5vw;
+      @include font($verdana, $gray);
+      @include relative-converter(font-size, vw, $f-medium, $min-large);
+    }
+  }
+}

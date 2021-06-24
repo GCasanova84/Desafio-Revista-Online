@@ -1,0 +1,12 @@
+.nav__item {
+  @include respond-to('large') {
+    a {
+      text-decoration: none;
+      @include font($monospace, $purple);
+      @include relative-converter(font-size, vw, $f-medium, $min-large);
+    }
+    a:hover {
+      color: $light-purple;
+    }
+  }
+}

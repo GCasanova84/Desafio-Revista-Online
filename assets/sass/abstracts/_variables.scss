@@ -1,6 +1,31 @@
+//Breakpoints for responsive design
 $breakpoints: (
   'small': (min-width: 360px),
   'medium': (min-width: 768px),
   'large': (min-width: 992px),
   'huge': (min-width: 1200px),
 );
+
+$min-large: 992px;
+//Font
+
+//Font family
+$monospace: monospace;
+$verdana: verdana;
+
+//Font size
+$f-small: 10px;
+$f-medium: 15px;
+$f-large: 20px;
+$f-x-large: 25px;
+
+//Color Scheme
+$white: white;
+$black: black;
+$gray: #808080;
+$light-gray: #f2f4f5;
+$blue: #4682b4;
+$orange: #ff7f50;
+$light-orange: #fc9c7e;
+$purple: #7849a3;
+$light-purple: #9c67d3;

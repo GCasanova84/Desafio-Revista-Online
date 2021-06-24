@@ -1,0 +1,38 @@
+@include respond-to('large') {
+  //"Diario" en barra de navegación
+  .navigation__logo {
+    @include font($monospace, $black);
+    @include relative-converter(font-size, vw, $f-x-large, $min-large);
+    font-weight: bold;
+  }
+  //Texto general
+  h1, h2 {
+    @include font($monospace, $black);
+    @include relative-converter(font-size, vw, $f-large, $min-large);
+    font-weight: bold;
+  }
+  h4 {
+    @include font($monospace, $black);
+    @include relative-converter(font-size, vw, $f-medium, $min-large);
+    font-weight: bold;
+  }
+  p {
+    @include font($monospace, $black);
+    @include relative-converter(font-size, vw, $f-medium, $min-large);
+  }
+  //Texto dentro de aside
+  ul li {
+    list-style: none;
+    @include font($monospace, $white);
+    @include relative-converter(font-size, vw, $f-medium, $min-large);
+    font-weight: bold;
+  }
+  //Texto dentro de newsletter
+  .newsletter__container {
+    h2 {
+      @include font($monospace, $black);
+      @include relative-converter(font-size, vw, $f-x-large, $min-large);
+      font-weight: bold;
+    }
+  }
+}
