@@ -13,4 +13,18 @@
       background-color: $light-orange;
     }
   }
+  @include respond-to('huge') {
+    button {
+      border-radius: 0;
+      background-color: $orange;
+      border-color: $orange;
+      border: none;
+      padding: 0.5vw;
+      @include font($verdana, $white);
+      @include relative-converter(font-size, vw, $f-small, $min-large);
+    }
+    button:hover {
+      background-color: $light-orange;
+    }
+  }
 }

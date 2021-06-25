@@ -19,4 +19,25 @@
       }
     }
   }
+  @include respond-to('huge') {
+    border-bottom: 2px solid gray;
+    & .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5vw;
+      & .nav {
+        padding-right: 3vw;
+        &__list {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          list-style: none;
+          & .nav__item {
+            margin-left: 1vw;
+          }
+        }
+      }
+    }
+  }
 }

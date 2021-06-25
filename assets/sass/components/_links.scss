@@ -9,4 +9,14 @@
       color: $light-purple;
     }
   }
+  @include respond-to('huge') {
+    a {
+      text-decoration: none;
+      @include font($monospace, $purple);
+      @include relative-converter(font-size, vw, $f-small, $min-large);
+    }
+    a:hover {
+      color: $light-purple;
+    }
+  }
 }

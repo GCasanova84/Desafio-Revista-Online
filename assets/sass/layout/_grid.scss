@@ -32,4 +32,37 @@
       grid-column-end: 4;
     }
   }
+  @include respond-to('huge') {
+    grid-template-columns: 21.35vw 21.3vw 21.3vw 22.75vw;
+    grid-column-gap: 4.1vw;
+    padding: 0 0.5vw;
+    & .header {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+    & .main {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      & .main-content {
+        & .news-list {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-column-gap: 1.3vw;
+          padding-left: 5.5vw;
+        }
+      }
+    }
+    & .aside {
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
+    & .newsletter {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+    footer {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+  }
 }

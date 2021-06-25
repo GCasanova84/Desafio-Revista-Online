@@ -6,6 +6,13 @@
     @include font($verdana, $gray);
     @include relative-converter(font-size, vw, $f-small, $min-large);
   }
+  @include respond-to('huge') {
+    border-radius: 2.5rem;
+    padding: 0.15vw;
+    max-width: 10vw;
+    @include font($verdana, $gray);
+    @include relative-converter(font-size, vw, $f-x-small, $min-large);
+  }
 }
 .newsletter__group {
   @include respond-to('large') {
@@ -15,6 +22,15 @@
       padding: 0.5vw;
       @include font($verdana, $gray);
       @include relative-converter(font-size, vw, $f-medium, $min-large);
+    }
+  }
+  @include respond-to('huge') {
+    input {
+      border-radius: 0;
+      border: none;
+      padding: 0.5vw;
+      @include font($verdana, $gray);
+      @include relative-converter(font-size, vw, $f-small, $min-large);
     }
   }
 }
